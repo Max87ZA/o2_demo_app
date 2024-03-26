@@ -54,7 +54,7 @@ function activateCodeClicked()
             try
             {
                 // var testResponse = JSON.stringify({"ios":"6.08", "iosTM":"1.22", "iosRA":"1.1401", "iosRA_2":"1.2000.1", "android":"179907", "androidTM":"22970", "androidRA":"161395"});
-                // var testResponse = "blablabla";
+                // var testResponse = "notValidJSONText";
                 var jsonResponse = JSON.parse(this.responseText);
                 // var jsonResponse = JSON.parse(testResponse);
                 setTimeout(function()
@@ -71,7 +71,7 @@ function activateCodeClicked()
                     {
                         $.cardNotActivatedAD.show();
                     }
-                }, 2000);
+                }, 0);
                 
             }
             catch(e)
