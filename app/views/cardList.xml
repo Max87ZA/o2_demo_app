@@ -1,0 +1,25 @@
+<Alloy>
+	<NavigationWindow id="navWindow">
+		<Window id="cardListWindow">
+			<View id="cardListMainView">
+				<ListView id="cardList" defaultItemTemplate="cardListTemplate" separatorStyle="Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE" onItemclick="cardListClicked">
+					<Templates>
+						<ItemTemplate name="cardListTemplate" id="cardListRow">
+							<View id="cardListTemplateView">
+								<Label id="cardTitle" bindId="title" />
+								<Label id="cardNumber" bindId="cardNumber"></Label>
+								<Label id="cardStatus" bindId="cardStatus"></Label>
+								
+							</View>
+						</ItemTemplate>
+					</Templates>
+					<ListSection id="cardSection"> 
+						<ListItem title:text="Card 1" cardNumber:text="a6af7208-e94a-46c0" properties:cardId="a6af7208-e94a-46c0" cardStatus:text="Activated" properties:revealed="true" properties:activated="true"/>
+						<ListItem title:text="Card 2" cardNumber:text="Not scratched yet" properties:cardId="a6af7208-e94a-46c1" cardStatus:text="Not scratched yet" properties:revealed="false" properties:activated="false"/>
+						<ListItem title:text="Card 3" cardNumber:text="dd3e255e-d92b-4c46" properties:cardId="a6af7208-e94a-46c2" cardStatus:text="Revealed, not activated" properties:revealed="true" properties:activated="false"/>
+					</ListSection>
+				</ListView>
+			</View>	
+		</Window>
+	</NavigationWindow>
+</Alloy>

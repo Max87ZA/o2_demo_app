@@ -1,0 +1,105 @@
+
+"#navWindow": {
+    // statusBarStyle:Ti.UI.iOS.StatusBar.DEFAULT,
+	translucent:false,
+	// barColor:"#0A275C",
+	barColor:"#1e5799",
+	tintColor: "#ffffff",
+    largeTitleAttributes: {
+		color: "#ffffff",
+    },
+    titleAttributes:{
+        color: "#ffffff"
+    }
+}
+
+"#cardListWindow" : {
+    title: "My cards",
+    largeTitleEnabled: true,
+    // barColor:"#0A275C",
+    barColor:"#1e5799",
+    tintColor: "#ffffff",
+    largeTitleAttributes: {
+		color: "#ffffff",
+    },
+    titleAttributes:{
+        color: "#ffffff"
+    },
+    backgroundGradient: 
+    {
+        type: "linear",
+        startPoint: {
+            x: "0%",
+            y: "0%"
+        },
+        endPoint: {
+            x: "0%",
+            y: "100%"
+        },
+        // colors: ["#4fc3f7", "#3949ab"]
+        // colors: ["#0019a5", "#3949ab"]
+        // colors: ["#0019a5", "#add8e6"]
+        colors: ["#1e5799", "#7db9e8"]
+    },
+}
+"#cardListMainView":{
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    backgroundColor: "transparent"
+}
+"#cardList": {
+    backgroundColor: "transparent",
+    top: 20,
+    bottom: 40,
+    left: 0,
+    right: 0,	
+}
+"#cardListRow": {
+    width:Titanium.UI.FILL,
+	height:230, //210
+	top:0,
+	backgroundColor:"transparent",
+    borderRadius: 13,
+	selectionStyle:Ti.UI.iOS.ListViewCellSelectionStyle.NONE,	
+}
+
+"#cardListTemplateView":{
+    height:210, //210
+    top:0,
+    left:8,
+    right:8,
+    // backgroundColor:"#cfd8dc",
+    // backgroundColor:"#00e5ff",
+    // backgroundColor:"#0090d0",
+    backgroundColor:"#11639A",
+    borderRadius: 13,
+    layout:"vertical",	
+}
+
+"#cardTitle":{
+    top:10,
+    height:30,
+    color:"#ffffff",
+    font:{
+        fontSize:16,
+    }
+}
+"#cardNumber":{
+    top:0,
+    height: 80,
+    color:"#ffffff",
+    font:{
+        fontSize:20,
+        fontWeight:"bold"
+    }
+}
+"#cardStatus": {
+    top:30,
+    color:"#ffffff",
+    font:{
+        fontSize:20,
+        fontWeight:"bold"
+    }	
+}

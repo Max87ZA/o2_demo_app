@@ -1,0 +1,18 @@
+<Alloy>
+	<Window id="cardDetail" onOpen="windowOpened" onClose="checkAnimation">
+		<BlurView id="loadingView">
+			<ActivityIndicator id="activityIndicator" visible="true"/>
+		</BlurView>
+		<View id="cardRevealedView">
+			<Label id="cardRevealedLabel"></Label>
+			<Module module="ti.paint" method="createPaintView" id="scratchView">
+			</Module>	
+		</View>
+		<Button id="autoRevealButton" onClick="autoRevealClicked"></Button>
+		<Button id="activateCodeButton" onClick="activateCodeClicked"></Button>
+		<AlertDialog id="cardActivatedAD"></AlertDialog>
+		<AlertDialog id="cardNotActivatedAD"></AlertDialog>
+		<AlertDialog id="cardNotRevealedAD"></AlertDialog>
+		<AlertDialog id="generalErrorAD"></AlertDialog>
+	</Window>
+</Alloy>

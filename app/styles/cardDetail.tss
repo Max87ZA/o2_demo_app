@@ -1,0 +1,102 @@
+
+"#cardDetail" : {
+    title: "Card Detail",
+    barColor:"#1e5799",
+    backgroundGradient: 
+    {
+        type: "linear",
+        startPoint: {
+            x: "0%",
+            y: "0%"
+        },
+        endPoint: {
+            x: "0%",
+            y: "100%"
+        },
+        colors: ["#1e5799", "#7db9e8"]
+    },
+}
+
+"#cardRevealedView":{
+    top: 16,
+    width: 300,
+    height: 83,
+    backgroundColor: "#11639A",
+}
+"#cardRevealedLabel":{
+    height: 80,
+    color:"#ffffff",
+    font:{
+        fontSize:20,
+        fontWeight:"bold"
+    }
+}
+"#scratchView":{
+    // top: 16,
+    width: 300,
+    height: 83,
+    image: "/images/scratchImage.png",
+	// strokeWidth (float), strokeColor (string), strokeAlpha (int, 0-255)
+	strokeColor: '#1e5799',
+    strokeEraseColor: '#ffffff',
+    strokeEraseWidth: 10,
+	strokeWidth: 5,
+	eraseMode: true,
+    // tiUIView: $.eraseButton
+    // fillColor: "#0000ff",
+    // backgroundColor: "#ffffff"
+}
+
+"#eraseButton":{
+    title: "Erase",
+    top: 120
+}
+
+"#autoRevealButton":{
+    top: 120,
+    width: 150,
+    title: "Reveal code",
+    left: 16,
+    backgroundColor: "#ffffff",
+    color: "#11639A",
+    borderRadius: 5
+}
+"#activateCodeButton":{
+    top: 120,
+    width: 150,
+    title: "Activate code",
+    right: 16,
+    backgroundColor: "#ffffff",
+    color: "#11639A",
+    borderRadius: 5
+}
+
+"#cardActivatedAD":{
+    title: "Card Activated",
+    message: "Your card has been activated",
+}
+
+"#cardNotActivatedAD":{
+    title: "Card Not Activated",
+    message: "Your card has not been activated",
+}
+"#cardNotRevealedAD":{
+    title: "Card Not Revealed",
+    message: "Your card is not revealed yet. please click on reveal code button first and try again",
+}
+
+"#generalErrorAD":{
+    title: "Error",
+    message: "An unknown error occurred",
+}
+
+"#loadingView":{
+  top: 0,
+  left: 0,
+  right: 0,
+  bottom: 0,
+  zIndex: 99,
+  // backgroundColor: "#CC000000",
+  effect:Ti.UI.iOS.BLUR_EFFECT_STYLE_DARK,
+  visible: false
+}
